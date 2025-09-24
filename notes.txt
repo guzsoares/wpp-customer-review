@@ -1,0 +1,10 @@
+Tables to create
+
+Appointments
+id, customer_name, customer_phone, appointment_datetime, service_type, status, created_at, updated_at
+
+review_requests
+id, appointment_id, scheduled_at, sent_at, status (pending/sent/failed), attempts, created_at, updated_at
+
+customer_reviews
+id, appointment_id, rating, comment, received_at, created_at, updated_at
