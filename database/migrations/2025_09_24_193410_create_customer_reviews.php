@@ -15,9 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('appointment_id')->constrained();
             $table->integer('rating')->nullable();
+            $table->string('comment');
             $table->datetime('received_at')->nullable();
-            $table->string('status')->default('pending');
-            $table->timestamps();
             $table->timestamps();
         });
     }
