@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('customer_name');
             $table->string('customer_phone');
-            $table->dateTime('appointment_time');
+            $table->dateTime('appointment_datetime');
             $table->string('service_type');
             $table->string('status')->default('scheduled');
             $table->timestamps();

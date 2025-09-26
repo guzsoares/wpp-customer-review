@@ -30,4 +30,9 @@ class Appointment extends Model
     {
         return $this->hasOne(CustomerReview::class);
     }
+
+    public function isCompleted(): bool
+    {
+        return $this->status === 'completed';
+    }
 }
